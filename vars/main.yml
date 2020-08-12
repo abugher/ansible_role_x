@@ -1,0 +1,11 @@
+---
+install_packages:
+  - 'xinit'
+  - 'i3'
+  - 'xscreensaver'
+install_files:
+  - owner:              'root'
+    group:              'root'
+    mode:               '0644'
+    src:                'files/conf/xinitrc'
+    dest:               '/etc/X11/xinit/xinitrc'

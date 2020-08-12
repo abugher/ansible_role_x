@@ -1,0 +1,11 @@
+---
+- include:              '../tasks/install_packages.yml'
+- include:              '../tasks/install_packages.yml'
+  vars:
+    install_packages:
+      - "xserver-xorg-video-{{ x_drivers[0] }}"
+  with_items:           "{{ x_drivers }}"
+  loop_control:
+    loop_var:           'driver'
+  when:                 x_drivers is defined
+- include:              '../tasks/install_files.yml'
