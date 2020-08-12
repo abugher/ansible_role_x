@@ -3,6 +3,8 @@ install_packages:
   - 'xinit'
   - 'i3'
   - 'xscreensaver'
+  - 'xterm'
+  - 'lxterminal'
 install_files:
   - owner:              'root'
     group:              'root'
