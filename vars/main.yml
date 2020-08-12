@@ -1,10 +1,13 @@
 ---
 install_packages:
   - 'xinit'
+  - 'x11-xserver-utils' # xrandr - nice to have
   - 'i3'
   - 'xscreensaver'
   - 'xterm'
   - 'lxterminal'
+  - 'redshift'
+  - 'libxcb-randr0'     # "optional" but necessary dependency for redshift
 install_files:
   - owner:              'root'
     group:              'root'
